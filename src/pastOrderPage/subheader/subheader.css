@@ -1,0 +1,52 @@
+.searchbar {
+    margin-top: 50px;
+    margin-left: 20px;
+    position: absolute;
+    top: 2px;
+    right: 395px;
+    z-index: 1;
+
+
+
+}
+
+.subheader {
+    width: 1440px;
+    background: #FFFFFF;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 60px
+}
+
+#order {
+    margin-left: 60px;
+    margin-top: 50px
+}
+
+#create {
+    margin-left: 750px;
+    margin-top: 40px;
+    border: 1px solid #5861AE;
+    color: #5861AE;
+    width: 90px;
+    height: 40px;
+}
+
+#input {
+    position: absolute;
+    top: 50px;
+    right: 240px;
+    left: 1020px;
+    width: 150px;
+    height: 21px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    /* UI Properties */
+    opacity: 1;
+    padding: 5px;
+
+
+}
