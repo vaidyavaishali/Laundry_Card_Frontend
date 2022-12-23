@@ -1,0 +1,23 @@
+.order {
+    border: 1px solid black;
+    position: absolute;
+    top: 200px;
+    text-align: center;
+    left: 120px;
+    width: 1170px;
+    background: black;
+
+}
+
+.order tr {
+    height: 35px;
+    color: #ccc;
+
+    display: flex;
+    flex-direction: row;
+
+    align-items: center;
+    justify-content: space-around;
+
+}
+
