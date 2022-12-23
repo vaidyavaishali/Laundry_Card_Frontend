@@ -5,7 +5,7 @@ import Header from "./Header/Header";
 import OrderCard from "./OrderCard/OrderCard";
 
 import SideBar from "./Sidebar/Sidebar";
-import Subheader from "./subheader/subheader";
+
 const PastOrderPage = () => {
     return (
         <>
@@ -13,7 +13,7 @@ const PastOrderPage = () => {
                 {/* <OrderDetailsCard/> */}
 
                 <Header/>
-                <Subheader/>
+       
                 <OrderCard/>
                 <SideBar/>
                 <Footer/>

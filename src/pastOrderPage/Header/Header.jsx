@@ -4,7 +4,7 @@ import user from '../images/user.png'
 import { useState } from "react";
 
 const Header = () => {
-    const Menu = ["Profile", "Setting", "Logout"]
+    const Menu = ["Profile", "Settings", "Logout"]
     const [open, setopen] = useState(false)
     return (
         <>
@@ -19,7 +19,7 @@ const Header = () => {
                     <p>Career</p>
                 </span>
                 <span className="userName" onClick={() => setopen(!open)}>
-                    <img src={user} className="user-icon"></img>
+                    <img src={user} className="user-icon" alt="user"></img>
                     <h3 id="user">UserName</h3>
                 </span>
                 {

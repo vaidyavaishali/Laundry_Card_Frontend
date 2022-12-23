@@ -25,7 +25,7 @@
     margin-top: 50px
 }
 
-#create {
+#creat {
     margin-left: 750px;
     margin-top: 40px;
     border: 1px solid #5861AE;
@@ -46,7 +46,6 @@
     border-right: none;
     /* UI Properties */
     opacity: 1;
-    padding: 5px;
 
 
 }

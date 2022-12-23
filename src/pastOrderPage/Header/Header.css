@@ -7,10 +7,10 @@
 
 .header {
     border: 1px solid black;
-    width: 1300px;
+    width: 1400px;
     height: 80px;
     margin-top: 10px;
-    margin-left: 20px;
+    margin-left: 0x;
     background: #FFFFFF 0% 0% no-repeat padding-box;
     box-shadow: 0px 2px 48px #0000000F;
     opacity: 1;
@@ -82,7 +82,7 @@
     display: flex;
     justify-content: center;
     border:  #ccc;
-    box-shadow: 5px 5px gainsboro;
+    box-shadow: 3px 3px gainsboro;
    
 
 }
