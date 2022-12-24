@@ -1,2 +1,0 @@
-# Laundry_Card_Frontend
-Laundry_Card_Frontend
