@@ -1,0 +1,150 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.mainPage {
+    width: 100%;
+    height: 80vh;
+    border-bottom: 2px solid #5861AE;
+    display: flex;
+}
+
+.left-half,
+.right-half {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+}
+
+.right-half {
+    background-color: #B9C0FD1A;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.left-half h1 {
+    margin: 80px 150px 0px 180px;
+    font-size: 100px;
+    color: #5861AE;
+}
+
+.left-half .type {
+    margin: 14px 240px 0px 180px;
+    font-size: 20px;
+    color: #565657;
+}
+
+.left-half .ask {
+    margin: 70px 240px 0px 180px;
+    font-size: 16px;
+    color: #565657;
+}
+
+.left-half button {
+    margin: 16px 460px 0px 180px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #4552C1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right-half h1 {
+    margin: 100px 452px 0px 140px;
+    font-size: 40px;
+    color: #4552C1;
+    padding: 0 0 20px 0;
+    font-weight: 500;
+}
+
+.right-half form {
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+
+form .type_field {
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 100px;
+}
+
+.type_field input {
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+
+.type_field label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #5861AE;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.type_field span::before {
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    transition: .5s;
+}
+
+.type_field input:focus~label,
+.type_field input:valid~label {
+    top: -5px;
+}
+
+.type_field input:focus~span::before,
+.type_field input:valid~span::before {
+    width: 100%;
+}
+
+.type_field img {
+    position: absolute;
+    top: 10px;
+    right: 0;
+}
+
+.pass {
+    margin: 0 0 0 476px;
+    color: #4552C1;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.form-btn {
+    text-align: center;
+    padding: 24px;
+    box-sizing: border-box;
+}
+
+.form-btn button {
+    padding: 10px 36px;
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid #5861AE;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #5861AE;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.error {
+    color: red;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: -15px;
+    margin-left: 400px;
+}
