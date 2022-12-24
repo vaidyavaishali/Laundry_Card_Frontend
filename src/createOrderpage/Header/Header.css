@@ -1,0 +1,104 @@
+/*
+
+/* UI Properties */
+/*  */
+/* ; */
+/* */
+
+.header {
+    border: 1px solid black;
+    width: 1300px;
+    height: 80px;
+    margin-top: 10px;
+    margin-left: 20px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 2px 48px #0000000F;
+    opacity: 1;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    left: 0px;
+    right: 0px;
+  
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+}
+
+#laundry {
+    margin-left: 30px;
+    color: #5861AE;
+}
+
+#pricing {
+    position: absolute;
+    right: 350px;
+    top: 20px
+}
+
+#career {
+    position: absolute;
+    right: 250px;
+    top: 20px
+}
+
+.userName {
+    width: 13%;
+    height: 80px;
+    /* background-color: #5861AE; */
+    position: absolute;
+    right: 0px;
+    background: #5861AE 0% 0% no-repeat padding-box;
+    color: #FFFFFF;
+
+}
+
+#user {
+    position: absolute;
+    top: 10px;
+    margin-left: 50px;
+    position: relative;
+
+}
+ 
+
+.user-icon {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 10px;
+    top: 12px
+}
+
+.logout {
+    background: #FFFFFF ;
+    height: 150px;
+    width: 120px;
+    position: relative;
+    position: absolute;
+    top: 82px;
+    right: 65px;
+    z-index: 1;
+    color: #5861AE;
+    border-radius: 10px;
+    /* padding: 5px; */
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    border:  #ccc;
+    box-shadow: 5px 5px gainsboro;
+   
+
+}
+.logout:hover, #user:hover , #create:hover{
+    cursor: pointer;
+
+}
+li{
+    list-style: none;
+    font-size: large;
+    margin: 10px;
+    margin-right: 30px;
+}
+li:hover{
+    background: #b3b9f5;
+}
