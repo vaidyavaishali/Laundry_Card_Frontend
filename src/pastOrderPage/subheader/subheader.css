@@ -5,9 +5,6 @@
     top: 2px;
     right: 395px;
     z-index: 1;
-
-
-
 }
 
 .subheader {
@@ -39,13 +36,12 @@
     top: 50px;
     right: 240px;
     left: 1020px;
-    width: 150px;
+    width: 10px;
     height: 21px;
     border-top: none;
     border-left: none;
     border-right: none;
     /* UI Properties */
     opacity: 1;
-
-
 }
+

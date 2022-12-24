@@ -1,6 +1,7 @@
-// import logo from './logo.svg';
 import React from 'react';
-import { Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import LandingPage from './Landing_Page/LandingPage';
+import Register from './Landing_Page/Register';
 import './App.css';
 import CancelAlert from './cancelAlertPopup/CancelAlert';
 // import Popup from './OrderSuccessFullyPopup/popup';
@@ -10,14 +11,15 @@ import PastOrderSummery from './PastOrderSummeryPage/PastOrderSummery';
 function App() {
   return (
     <div className="App">
+      <BrowserRouter>
       <Routes>
-        <Route path="/" element = {<PastOrderPage />}/>
+        <Route index element={<LandingPage />} />
+        <Route path='/Register' element={<Register />} />
+        <Route path="/PastOrderPage" element = {<PastOrderPage />}/>
         <Route path="/summery" element = {<PastOrderSummery />}/>
         <Route path="/cancel/alert" element = {<CancelAlert />}/>
-        {/* <Route path="/success" element = {<Popup />}/> */}
-        
       </Routes>
-
+    </BrowserRouter>
     </div>
   );
 }

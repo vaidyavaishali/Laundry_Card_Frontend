@@ -41,13 +41,12 @@ const LandingPage = () => {
 
     useEffect(() => {
         if (localStorage.getItem('token')) {
-            navigate("/");
+            navigate("/PastOrderPage");
         }
         // eslint-disable-next-line
     }, [])
 
     const [data, setData] = useState({
-        email: '',
         phone: '',
         password: '',
     })
@@ -78,7 +77,7 @@ const LandingPage = () => {
                 console.log('response :: ', res.data)
                 alert('success')
                 localStorage.setItem('token', res.data.token)
-                navigate('/')
+                navigate('/PastOrderPage')
             })
             .catch(e => {
                 console.log(e)
@@ -92,18 +91,18 @@ const LandingPage = () => {
         <>
             <Header />
 
-                    <body>
+            <body>
                 <div className='mainPage'>
                     <div className='left-half'>
                         <h1>Laundry Service</h1>
                         <p className='type'>Doorstep Wash & Dryclean Service</p>
                         <p className='ask'>Don’t Have An Account?</p>
                         <button><Link to='/Register'
-                         style={{
-                            textDecoration: 'none',
-                            color: '#4552C1',
-                            fontSize: '15px'
-                        }}>Register</Link></button>
+                            style={{
+                                textDecoration: 'none',
+                                color: '#4552C1',
+                                fontSize: '15px'
+                            }}>Register</Link></button>
                     </div>
 
                     <div className='right-half'>
@@ -142,7 +141,12 @@ const LandingPage = () => {
                             </div>
 
                             <div className='form-btn'>
-                                <button type='submit'>Submit</button>
+                                <button type='submit'><Link to="/PastOrderPage"
+                                    style={{
+                                        textDecoration: 'none',
+                                        color: 'white',
+                                        fontSize: '16px'
+                                    }}>Submit</Link></button>
                             </div>
                         </form>
                     </div>
