@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.registerPage {
+    width: 100%;
+    height: 80vh;
+    border-bottom: 2px solid #5861AE;
+    display: flex;
+}
+
+.left-part {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+.left-part h1 {
+    margin: 150px 0 0 70px;
+    font-size: 62px;
+    color: #5861AE;
+}
+
+.left-part .para1 {
+    margin: 30px 100px 0px 70px;
+    font-size: 20px;
+    color: #565657;
+}
+
+.left-part .para2 {
+    margin: 70px 24px 0px 70px;
+    font-size: 16px;
+    color: #565657;
+}
+
+.left-part button {
+    margin: 30px 190px 0px 70px;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 2px solid #4552C1;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.right-part {
+    width: 75%;
+    background-color: #F8F9FF;
+    padding: 25px 40px;
+    box-sizing: border-box;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.right-part h1 {
+    margin-left: 28px;
+    font-size: 32px;
+    color: #5861AE;
+    font-weight: 500;
+}
+
+.input-box {
+    display: flex;
+}
+
+.input-box label {
+    display: block;
+    color: #4552C1;
+    margin-left: 20px;
+}
+
+.input {
+    background-color: #f8f9ff;
+    border: 0;
+    border-bottom: 1px solid #989898;
+    padding-bottom: 10px;
+    width: 35%;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #4552C1;
+    margin: 0px 60px 50px 20px;
+}
+
+.checkbox {
+    margin: 10px 220px 0 252px;
+    color: #5861AE;
+}
+
+.register-btn button {
+    margin: 34px 450px 80px 430px;
+    padding: 10px 36px;
+    box-sizing: border-box;
+    border: none;
+    border: 2px solid #5861AE;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #5861AE;
+    font-size: 15px;
+    color: white;
+    letter-spacing: 0.3px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
