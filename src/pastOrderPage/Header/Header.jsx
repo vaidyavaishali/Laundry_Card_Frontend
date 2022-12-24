@@ -4,7 +4,6 @@ import user from '../images/user.png'
 import { useState } from "react";
 
 const Header = () => {
-    const Menu = ["Profile", "Settings", "Logout"]
     const [open, setopen] = useState(false)
     return (
         <>
@@ -22,18 +21,6 @@ const Header = () => {
                     <img src={user} className="user-icon" alt="user"></img>
                     <h3 id="user">UserName</h3>
                 </span>
-                {
-                    open && <div className="logout">
-                        <ul>
-                            {Menu.map((options, i) => (
-                                <li>{options}</li>
-                            ))}
-                        </ul>
-
-
-                    </div>
-                }
-
             </div>
         </>
     )

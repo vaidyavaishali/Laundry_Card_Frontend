@@ -199,7 +199,12 @@ function Register() {
                             </div>
 
                             <div className="register-btn">
-                                <button type='submit'>Register</button>
+                                <button type='submit'><Link to="/"
+                                 style={{
+                                    textDecoration: 'none',
+                                    color: 'white',
+                                    fontSize: '16px'
+                                }}>Register</Link></button>
                             </div>
                         </form>
                     </div >
