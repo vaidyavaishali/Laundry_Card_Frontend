@@ -339,9 +339,9 @@ function CreateOrder() {
           </thead>
           <tbody>
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/cloth.png")} alt="washing" />Shirts</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/shirtss.png")} alt="washing" />Shirts</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 0) }}
-                value={orderDetails[0].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+                value={orderDetails[0].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(0, 0) }}><img src={orderDetails[0].wash ?
@@ -380,8 +380,8 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/tshirt.png")} alt="washing" />T Shirts</td>
-              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 1) }} value={orderDetails[1].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/T-shirtss.png")} alt="washing" />T Shirts</td>
+              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 1) }} value={orderDetails[1].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(1, 0) }}><img src={orderDetails[1].wash ?
@@ -420,7 +420,7 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/trousers.png")} alt="washing" />Trousers</td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/trouserss.png")} alt="washing" />Trousers</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 2) }} value={orderDetails[2].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
@@ -460,8 +460,8 @@ function CreateOrder() {
 
 
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/jeans.png")} alt="washing" />Jeans</td>
-              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 3) }} value={orderDetails[3].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/jeanss.png")} alt="washing" />Jeans</td>
+              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 3) }} value={orderDetails[3].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(3, 0) }}><img src={orderDetails[3].wash ?
                   require("../Assets/washing-machineSelected.png") :
@@ -498,8 +498,8 @@ function CreateOrder() {
 
 
             <tr>
-              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/boxers.png")} alt="washing" />Boxers</td>
-              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 4) }} value={orderDetails[4].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/shorts.png")} alt="washing" />Boxers</td>
+              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 4) }} value={orderDetails[4].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(4, 0) }}><img src={orderDetails[4].wash ?
                   require("../Assets/washing-machineSelected.png") :
@@ -536,8 +536,8 @@ function CreateOrder() {
 
 
             <tr>
-              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/pants.png")} alt="washing" />Joggers</td>
-              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 5) }} value={orderDetails[5].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+              <td> <img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/jogger-pants.png")} alt="washing" />Joggers</td>
+              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 5) }} value={orderDetails[5].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(5, 0) }}><img src={orderDetails[5].wash ?
                   require("../Assets/washing-machineSelected.png") :
@@ -572,8 +572,8 @@ function CreateOrder() {
               <div id='reset-btn'><button onClick={() => { handleReset(5) }}>Reset</button></div>
             </tr>
             <tr>
-              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/others.png")} alt="washing" />Others</td>
-              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 6) }} value={orderDetails[6].quantity} type={"text"} style={{ width: '80px', textAlign: "center" }}></input></td>
+              <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/clean-clothes.png")} alt="washing" />Others</td>
+              <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 6) }} value={orderDetails[6].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
                 <div onClick={() => { toggleServices(6, 0) }}><img src={orderDetails[6].wash ?
                   require("../Assets/washing-machineSelected.png") :
@@ -638,7 +638,7 @@ function CreateOrder() {
                 <div className='store-info'>
 
                   <div>
-                    <input type="text" value={newOrder.store}
+                    <input type="number" value={newOrder.store}
                       onChange={(e) => { setNewOrder({ ...newOrder, store: e.target.value }) }}
                       placeholder='Store Location' style={{ position: "relative", top: "10px", border: "none", borderBottom: "1px solid gray", marginRight: "50px", backgroundColor: "#E0E0E0" }} />
                     <span style={{ marginRight: "50px" }}>Store Address:</span>
