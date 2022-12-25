@@ -341,7 +341,7 @@ function CreateOrder() {
             <tr>
               <td><img style={{ height: '50px', marginRight: "15px" }} src={require("../Assets/shirtss.png")} alt="washing" />Shirts</td>
               <td><input min={1} placeholder={0} onBlur={quantityUpdated} onChange={(e) => { handleInput(e, 0) }}
-                value={orderDetails[0].quantity} type={"number"} style={{ width: '80px', textAlign: "center" }}></input></td>
+                value={orderDetails[0].quantity} type="number" style={{ width: '80px', textAlign: "center" }}></input></td>
               <td className='wash-type'>
 
                 <div onClick={() => { toggleServices(0, 0) }}><img src={orderDetails[0].wash ?
