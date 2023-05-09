@@ -31,6 +31,7 @@ export default function Signup() {
     terms: false
   })
 
+  console.log(userDetails)
   const handleInput = (e) => {
     const { name, value } = e.target
 

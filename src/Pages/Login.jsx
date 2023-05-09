@@ -7,20 +7,19 @@ export default function Login() {
 
   const navigate = useNavigate()
 
-  useEffect(()=>{
-    if(user){
+  useEffect(() => {
+    if (user) {
       console.log("hello");
-      navigate("/home",{replace:true})
+      navigate("/home", { replace: true })
     }
-  },[])
+  }, [])
   const { toast } = useContext(ToastContext)
-  const { Login,user } = useContext(AuthContext)
+  const { Login, user } = useContext(AuthContext)
 
   const [userDetails, setUSerDetails] = useState({
     email: "",
     password: ""
   })
-
 
   const handleInput = (e) => {
     const { name, value } = e.target

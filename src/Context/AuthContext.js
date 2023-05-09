@@ -63,9 +63,9 @@ export const AuthContextProvider = ({ children }) => {
     const SignUp = async (UserDetails) => {
 
         try {
-            //console.log(UserDetails);
+            console.log(UserDetails);
             const res = await axios.post("https://laundry-card-backend.onrender.com/users/signup", UserDetails)
-            //console.log(res);
+            console.log(res);
             toast.success("User Registered Successfully")
             navigate("/",{replace:true})
 
